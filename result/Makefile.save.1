@@ -1,0 +1,10 @@
+# ALTLI
+exp1: exp1.o
+	gcc exp1.o -o exp1
+
+exp1.o: exp1.c exp1.h
+	gcc -g -c exp1.c
+
+.PHONY: clean
+clean:
+	rm exp1 *.o 
